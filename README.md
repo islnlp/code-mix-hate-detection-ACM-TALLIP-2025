@@ -1,1 +1,1 @@
-# Code-mix-hate-detection
+# Code-Mixed Hate Detection

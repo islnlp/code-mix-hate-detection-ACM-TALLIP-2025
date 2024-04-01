@@ -39,25 +39,9 @@ Hatespeech_Hindi which is then combined with Hatespeech_Codemix.
 To get results directly run the file like this:
 
 ``` 
-python3 Main_results/0SVM_Combined_1416.py
-
-python3 Main_results/0RF_Combined_1416.py
-
-python3 Main_results/0NB_Combined_1416.py
-
-python3 Main_results/0mBERT_Trans_Combined_1416.py
-
-python3 Main_results/0mBERT_without_Trans_Combined_1416.py
-
-python3 Main_results/0XLMR_Trans_Combined_1416.py
-
-python3 Main_results/0XLMR_without_Trans_Combined_1416.py
-
-python3 Main_results/0XLM_Trans_Combined_1416.py
-
-python3 Main_results/0XLM_without_Trans_Combined_1416.py
+python3 Main_results/{model}.py
 ```
-
+Select the model from the following: {0SVM_Combined_1416,0RF_Combined_1416,0NB_Combined_1416,0mBERT_Trans_Combined_1416,0mBERT_without_Trans_Combined_1416,0XLMR_Trans_Combined_1416,0XLMR_without_Trans_Combined_1416,0XLM_Trans_Combined_1416,0XLM_without_Trans_Combined_1416}
 
 2. Hate and Non-hate samples in Hatespeech_English(new) and Hatespeech_Hindi are
 in the same ratio(Maximum possible samples) as Hatespeech_Codemix.

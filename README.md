@@ -9,26 +9,12 @@ pip install -r requirements.txt
 ### Getting Started
 
 To get results of models on Hatespeech_Codemix data directly run the file like this:
+
 ```
-python3 Main_results/0SVM_Codemix.py
-
-python3 Main_results/0RF_Codemix.py
-
-python3 Main_results/0NB_Codemix.py
-
-python3 Main_results/0mBERT_Trans_Codemix.py
-
-python3 Main_results/0mBERT_without_Trans_Codemix.py
-
-python3 Main_results/0XLMR_Trans_Codemix.py
-
-python3 Main_results/0XLMR_without_Trans_Codemix.py
-
-python3 Main_results/0XLM_Trans_Codemix.py
-
-python3 Main_results/0XLM_without_Trans_Codemix.py
+python3 Main_results/{model}.py
 ```
-
+Select the model from the following: 
+{0SVM_Codemix.py,0RF_Codemix.py,0NB_Codemix.py,0mBERT_Trans_Codemix.py,0mBERT_without_Trans_Codemix.py,0XLMR_Trans_Codemix.py,0XLMR_without_Trans_Codemix.py,0XLM_Trans_Codemix.py,0XLM_without_Trans_Codemix.py}
 
 ### Experiment 1
 
@@ -49,25 +35,10 @@ in the same ratio(Maximum possible samples) as Hatespeech_Codemix.
 To get results directly run the file like this:
 
 ```
-python3 Main_results/0SVM_Combined_cmratio.py
-
-python3 Main_results/0RF_Combined_cmratio.py
-
-python3 Main_results/0NB_Combined_cmratio.py
-
-python3 Main_results/0mBERT_Trans_Combined_cmratio.py
-
-python3 Main_results/0mBERT_without_Trans_Combined_cmratio.py
-
-python3 Main_results/0XLMR_Trans_Combined_cmratio.py
-
-python3 Main_results/0XLMR_without_Trans_Combined_cmratio.py
-
-python3 Main_results/0XLM_Trans_Combined_cmratio.py
-
-python3 Main_results/0XLM_without_Trans_Combined_cmratio.py
+python3 Main_results/{model}.py
 ```
-
+Select the model from the following: 
+{0SVM_Combined_cmratio.py,0RF_Combined_cmratio,0NB_Combined_cmratio.py,0mBERT_Trans_Combined_cmratio.py,0mBERT_without_Trans_Combined_cmratio.py,0XLMR_Trans_Combined_cmratio.py,0XLMR_without_Trans_Combined_cmratio.py,0XLM_Trans_Combined_cmratio.py,0XLM_without_Trans_Combined_cmratio.py}
 
 
 ### Experiment 2
@@ -80,18 +51,10 @@ sample size of 400,600,800,1000,1200,1400.
 To get results directly run the file like this:
 
 ```
-python3 Experiment2/0mBERT_Trans_Combined_exp2_200.py
-
-python3 Experiment2/0mBERT_without_Trans_Combined_exp2_200.py
-
-python3 Experiment2/0XLMR_Trans_Combined_exp2_200.py
-
-python3 Experiment2/0XLMR_without_Trans_Combined_exp2_200.py
-
-python3 Experiment2/0XLM_Trans_Combined_exp2_200.py
-
-python3 Experiment2/0XLM_without_Trans_Combined_exp2_200.py
+python3 Experiment2/{model}.py
 ```
+Select the model from the following: 
+{0mBERT_Trans_Combined_exp2_200.py,0mBERT_without_Trans_Combined_exp2_200.py,0XLMR_Trans_Combined_exp2_200.py,0XLMR_without_Trans_Combined_exp2_200.py,0XLM_Trans_Combined_exp2_200.py,0XLM_without_Trans_Combined_exp2_200.py}
 
 These codes are default for 200 samples. For different sample sizes required lines are
 commented in the code.
@@ -106,18 +69,9 @@ mixed along with Codemix data.We have then tried a sample size of
 To get results directly run the file like this:
 
 ```
-python3 Experiment2/0mBERT_Trans_Combined_exp2_cmratio.py
-
-python3 Experiment2/0mBERT_without_Trans_Combined_exp2_cmratio.py
-
-python3 Experiment2/0XLMR_Trans_Combined_exp2_cmratio.py
-
-python3 Experiment2/0XLMR_without_Trans_Combined_exp2_cmratio.py
-
-python3 Experiment2/0XLM_Trans_Combined_exp2_cmratio.py
-
-python3 Experiment2/0XLM_without_Trans_Combined_exp2_cmratio.py
+python3 Experiment2/{model}.py
 ```
+{0mBERT_Trans_Combined_exp2_cmratio.py,0mBERT_without_Trans_Combined_exp2_cmratio.py,0XLMR_Trans_Combined_exp2_cmratio.py,0XLMR_without_Trans_Combined_exp2_cmratio.py,0XLM_Trans_Combined_exp2_cmratio.py,0XLM_without_Trans_Combined_exp2_cmratio.py}
 
 These codes are default for 200 samples of Hindi and English dataset. For different
 sample sizes required lines are commented in the code.
@@ -139,19 +93,10 @@ required lines are commented in the code.
 To get results directly run the file like this:
 
 ```
-python3 Experiment3/0mBERT_Trans_Combined_exp3_vcom.py
-
-python3 Experiment3/0mBERT_without_Trans_Combined_exp3_vcom.py
-
-python3 Experiment3/0XLMR_Trans_Combined_exp3_vcom.py
-
-python3 Experiment3/0XLMR_without_Trans_Combined_exp3_vcom.py
-
-python3 Experiment3/0XLM_Trans_Combined_exp3_vcom.py
-
-python3 Experiment3/0XLM_without_Trans_Combined_exp3_vcom.py
+python3 Experiment3/{model}.py
 ```
-
+Select the model from the following: 
+{0mBERT_Trans_Combined_exp3_vcom.py,0mBERT_without_Trans_Combined_exp3_vcom.py,0XLMR_Trans_Combined_exp3_vcom.py,0XLMR_without_Trans_Combined_exp3_vcom.py,0XLM_Trans_Combined_exp3_vcom.py,0XLM_without_Trans_Combined_exp3_vcom.py}
 
 
 2. Codemix Validation Set: Using the original Codemix validation set.
@@ -159,15 +104,7 @@ python3 Experiment3/0XLM_without_Trans_Combined_exp3_vcom.py
 To get results directly run the file like this:
 
 ```
-python3 Experiment3/0mBERT_Trans_Combined_exp3_vcod.py
-
-python3 Experiment3/0mBERT_without_Trans_Combined_exp3_vcod.py
-
-python3 Experiment3/0XLMR_Trans_Combined_exp3_vcod.py
-
-python3 Experiment3/0XLMR_without_Trans_Combined_exp3_vcod.py
-
-python3 Experiment3/0XLM_Trans_Combined_exp3_vcod.py
-
-python3 Experiment3/0XLM_without_Trans_Combined_exp3_vcod.py
+python3 Experiment3/{model}.py
 ```
+Select the model from the following: 
+{0mBERT_Trans_Combined_exp3_vcod.py,0mBERT_without_Trans_Combined_exp3_vcod.py,0XLMR_Trans_Combined_exp3_vcod.py,0XLMR_without_Trans_Combined_exp3_vcod.py,0XLM_Trans_Combined_exp3_vcod.py,0XLM_without_Trans_Combined_exp3_vcod.py}

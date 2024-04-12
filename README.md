@@ -5,6 +5,13 @@
 1. Install requirements.txt file using
 pip install -r requirements.txt
 
+### Datasets
+
+We have used publicly available datasets. The link of the datasets are:
+Hate_Codemix : https://github.com/deepanshu1995/HateSpeech-Hindi-English-Code-Mixed-Social-Media-Text
+Hate_English : https://hasocfire.github.io/hasoc/2019/dataset.html
+Hate_Hindi : https://github.com/hate-alert/HateCheckHIn
+
 
 ### Getting Started
 

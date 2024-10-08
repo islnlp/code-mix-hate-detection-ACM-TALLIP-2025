@@ -3,8 +3,9 @@
 ### Prerequisites
 
 1. Install requirements.txt file using
+```bash
 pip install -r requirements.txt
-
+```
 ### Datasets
 
 We have used publicly available datasets. The link of the datasets are:

@@ -1,4 +1,4 @@
-# Code-Mixed Hate Detection
+# Code-Mixed Hate Detection [ACM TALLIP 2025]
 
 ### Prerequisites
 

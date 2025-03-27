@@ -1,12 +1,16 @@
-# Code-Mixed Hate Detection [ACM TALLIP 2025]
+# Code-Mixed Hate Detection [ACM TALLIP 2025] 
 
-### Prerequisites
+<p align="center">
+  <img src="hate_logo.png" alt="Project Logo" width="150"/>
+</p>
+
+### 📋 Prerequisites
 
 1. Install requirements.txt file using
 ```bash
 pip install -r requirements.txt
 ```
-### Datasets
+### 📂 Datasets
 
 We have used publicly available datasets. The link of the datasets are:
 
@@ -17,7 +21,7 @@ Hate_English : https://hasocfire.github.io/hasoc/2019/dataset.html
 Hate_Hindi : https://github.com/hate-alert/HateCheckHIn
 
 
-### Getting Started
+### 🚀 Getting Started
 
 To get results of models on Hatespeech_Codemix data directly run the file like this:
 

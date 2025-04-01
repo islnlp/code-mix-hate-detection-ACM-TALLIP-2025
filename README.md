@@ -38,9 +38,7 @@ pip install -r requirements.txt
 ```
 ### 📂 Datasets
 
-We have used publicly available datasets. The link of the datasets are:
-
-### :file_folder: Datasets
+We have used publicly available datasets. The source of the datasets are:
 
 | Dataset      | Language      | Source                                      |
 |--------------|---------------|---------------------------------------------|

@@ -5,7 +5,7 @@
 </p>
 
 <div align="center">
-  <a href="https://dl.acm.org/journal/tallip">
+  <a href="https://dl.acm.org/doi/abs/10.1145/3726866">
     <img src="https://img.shields.io/badge/ACM-TALLIP2025-blue" alt="ACM TALLIP 2025" />
   </a>
   <a href="https://www.python.org/">

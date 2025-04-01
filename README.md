@@ -25,7 +25,6 @@
   - [Experiment 1](#experiment-1)
   - [Experiment 2](#experiment-2)
   - [Experiment 3](#experiment-3)
-- [Contribution](#-contribution)
 - [Citation](#-citation)
 
 ---

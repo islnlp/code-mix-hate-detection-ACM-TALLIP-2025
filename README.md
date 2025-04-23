@@ -137,7 +137,7 @@ python3 Experiment3/{model}.py
 
 
 ### 📜 Citation
-If you use our work, please cite it using this bibtex and consider starring this repository.
+If you use our work, consider starring this repository and please cite it as:
 
 ```
 @article{10.1145/3726866,

@@ -79,7 +79,9 @@ To get results of models on Hatespeech_Codemix data directly run the file like t
 python3 Main_results/{model}.py
 ```
 
-### Experiment 1
+### Experiments
+
+#### Experiment 1
 
 1. Hate and Non-hate samples are 1416 each of Hatespeech_English(new) and
 Hatespeech_Hindi which is then combined with Hatespeech_Codemix.
@@ -100,7 +102,7 @@ To get results directly run the file like this:
 python3 Main_results/{model}.py
 ```
 
-### Experiment 2
+#### Experiment 2
 
 
 1. Incremental Mixing: A batch of 200 samples of Hate and Non-hate class each from
@@ -135,7 +137,7 @@ sample sizes required lines are commented in the code.
 
 
 
-### Experiment 3
+#### Experiment 3
 Here the training sets consisted solely of Hindi and English combined samples, only
 English samples(only code-mix validation set) and only Hindi samples(only code-mix
 validation set). Samples were taken in an incremental way like part 1 of Experiment 2.

@@ -151,6 +151,8 @@ Select the model from the following:
 
 
 ### 📜 Citation
+If you use our work, please cite it using this bibtex and consider starring this repository.
+
 ```
 @article{10.1145/3726866,
 author = {Mazumder, Debajyoti and Kumar, Aakash and Patro, Jasabanta},

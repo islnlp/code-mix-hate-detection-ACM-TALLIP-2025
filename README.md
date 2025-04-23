@@ -27,6 +27,31 @@
   - [Experiment 3](#experiment-3)
 - [Citation](#-citation)
 
+The directory looks like:
+
+```
+├── Dataset/
+│   ├── README.md
+│   ├── hate_codemix
+│   ├── hate_english
+│   ├── hate_hindi
+├── Experiment2/
+│   ├── 0XLMR_Trans_Combined_exp2_200.py
+│   ├── 0XLMR_Trans_Combined_exp2_cmratio.py
+│   └── ...
+├── Experiment3/
+│   ├── 0XLMR_Trans_Combined_exp3_vcod.py
+│   ├── 0XLMR_Trans_Combined_exp3_vcom.py
+│   └── ...
+├── Main_results/
+│   ├── 0NB_Codemix.py
+│   ├── 0NB_Combined_1416.py
+│   └── ...
+├── README.md
+├── hate_logo.png
+├── requirements.txt
+```
+
 ---
 
 ### 📋 Prerequisites

@@ -27,7 +27,83 @@
   - [Experiment 3](#experiment-3)
 - [Citation](#-citation)
 
-The directory looks like:
+---
+
+## 📖 Project Overview
+This repository accompanies our ACM TALLIP 2025 paper on **Improving Code-Mixed Hate Detection by Native Sample Mixing**. We propose a novel method to enhance hate detection in Hindi-English code-mixed settings using native language samples and perform extensive experiments to validate our hypothesis.
+
+---
+
+## 📋 Prerequisites
+
+1. Install all necessary dependencies with:
+```bash
+pip install -r requirements.txt
+```
+## 📂 Datasets
+
+We used publicly available datasets across Hindi, English, and Hindi-English code-mixed domains:
+
+| Dataset      | Language      | Source                                      |
+|--------------|---------------|---------------------------------------------|
+| Hate Codemix | Hindi-English | [Link](https://github.com/deepanshu1995/HateSpeech-Hindi-English-Code-Mixed-Social-Media-Text) |
+| HASOC 2019 | English       | [Link](https://hasocfire.github.io/hasoc/2019/dataset.html) |
+| HateCheckHIn   | Hindi         | [Link](https://github.com/hate-alert/HateCheckHIn)          |
+
+
+## 🚀 Getting Started
+To run a model on the code-mixed dataset (Hatespeech_Codemix):
+```bash
+python3 Main_results/{model}.py
+```
+Replace `{model}` with the specific model file.
+
+## 🔬 Experiments
+
+### Experiment 1
+- Equal number of hate and non-hate samples (1416 each) from English and Hindi datasets were combined with the code-mixed data.
+- A second variant uses native samples in the same ratio as the code-mixed training set.
+
+Run using:
+```
+python3 Main_results/{model}.py
+```
+
+### Experiment 2
+**1. Incremental Mixing:**
+- Native samples were added in increments of 200 up to 1400.
+- Default setup uses 200 samples.
+
+**2. Label Ratio Mixing:**
+- Native samples were added while maintaining class balance to match the ratio in the code-mixed training set.
+
+Run using:
+```
+python3 Experiment2/{model}.py
+```
+
+These codes are default for 200 samples of Hindi and English dataset. For different
+sample sizes required lines are commented in the code.
+
+
+
+
+### Experiment 3
+Native-only training with a code-mixed validation set. Three training sets:
+
+**1.** With only Hindi samples
+
+**2.** With only English samples
+
+**3.** With English and Hindi samples together
+
+All the training sets with an equal proportion of "hate" and "non-hate" samples.
+
+```
+python3 Experiment3/{model}.py
+```
+
+## 📁 Directory Structure
 
 ```
 ├── Dataset/
@@ -52,118 +128,8 @@ The directory looks like:
 ├── requirements.txt
 ```
 
----
 
-### 📋 Prerequisites
-
-1. Install requirements.txt file using
-```bash
-pip install -r requirements.txt
-```
-### 📂 Datasets
-
-We have used publicly available datasets. The source of the datasets are:
-
-| Dataset      | Language      | Source                                      |
-|--------------|---------------|---------------------------------------------|
-| Hate Codemix | Hindi-English | [Link](https://github.com/deepanshu1995/HateSpeech-Hindi-English-Code-Mixed-Social-Media-Text) |
-| HASOC 2019 | English       | [Link](https://hasocfire.github.io/hasoc/2019/dataset.html) |
-| HateCheckHIn   | Hindi         | [Link](https://github.com/hate-alert/HateCheckHIn)          |
-
-
-### 🚀 Getting Started
-
-To get results of models on Hatespeech_Codemix data directly run the file like this:
-
-```
-python3 Main_results/{model}.py
-```
-
-### Experiments
-
-#### Experiment 1
-
-1. Hate and Non-hate samples are 1416 each of Hatespeech_English(new) and
-Hatespeech_Hindi which is then combined with Hatespeech_Codemix.
-
-
-To get results directly run the file like this:
-
-``` 
-python3 Main_results/{model}.py
-```
-
-2. Hate and Non-hate samples in Hatespeech_English(new) and Hatespeech_Hindi are
-in the same ratio(Maximum possible samples) as Hatespeech_Codemix.
-
-To get results directly run the file like this:
-
-```
-python3 Main_results/{model}.py
-```
-
-#### Experiment 2
-
-
-1. Incremental Mixing: A batch of 200 samples of Hate and Non-hate class each from
-English and Hindi datasets were mixed along with Codemix data. We have then tried a
-sample size of 400,600,800,1000,1200,1400.
-
-To get results directly run the file like this:
-
-```
-python3 Experiment2/{model}.py
-```
-
-These codes are default for 200 samples. For different sample sizes required lines are
-commented in the code.
-
-
-
-2. Label Ratio Mixing: A batch of 200 samples each from English and Hindi datasets in
-which Hate and Non-hate class is present in the same ratio as in Codemix data were
-mixed along with Codemix data.We have then tried a sample size of
-400,600,800,1000,1200,1400.
-   
-To get results directly run the file like this:
-
-```
-python3 Experiment2/{model}.py
-```
-
-These codes are default for 200 samples of Hindi and English dataset. For different
-sample sizes required lines are commented in the code.
-
-
-
-
-#### Experiment 3
-Here the training sets consisted solely of Hindi and English combined samples, only
-English samples(only code-mix validation set) and only Hindi samples(only code-mix
-validation set). Samples were taken in an incremental way like part 1 of Experiment 2.
-Here codes for the highest possible sample size is given. For different sample sizes
-required lines are commented in the code.
-
-
-
-1. Mixed Validation Set: Comprises Hindi and English samples similar to training set.
-   
-To get results directly run the file like this:
-
-```
-python3 Experiment3/{model}.py
-```
-
-2. Codemix Validation Set: Using the original Codemix validation set.
-   
-To get results directly run the file like this:
-
-```
-python3 Experiment3/{model}.py
-```
-
-
-### 📜 Citation
+## 📜 Citation
 If you use our work, consider starring this repository and please cite it as:
 
 ```

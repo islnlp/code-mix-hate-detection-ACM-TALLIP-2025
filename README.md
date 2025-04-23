@@ -99,6 +99,7 @@ Native-only training with a code-mixed validation set. Three training sets:
 
 All the training sets with an equal proportion of "hate" and "non-hate" samples.
 
+Run using:
 ```
 python3 Experiment3/{model}.py
 ```

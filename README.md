@@ -30,7 +30,7 @@
 ---
 
 ## 📖 Project Overview
-This repository accompanies our ACM TALLIP 2025 paper on **Improving Code-Mixed Hate Detection by Native Sample Mixing**. We propose a novel method to enhance hate detection in Hindi-English code-mixed settings using native language samples and perform extensive experiments to validate our hypothesis.
+This repository accompanies our ACM TALLIP 2025 paper on **[Improving Code-Mixed Hate Detection by Native Sample Mixing](https://dl.acm.org/doi/abs/10.1145/3726866)**. We propose a novel method to enhance hate detection in Hindi-English code-mixed settings using native language samples and perform extensive experiments to validate our hypothesis.
 
 ---
 
